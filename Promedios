@@ -1,0 +1,31 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+double calcularPromedio(const vector<double>& numeros) {
+    double suma = 0.0;
+    for (double numero : numeros) {
+        suma += numero;
+    }
+    return suma / numeros.size();
+}
+
+int main() {
+    int cantidadNumeros;
+    cout << "Ingrese la cantidad de numeros: ";
+    cin >> cantidadNumeros;
+
+    vector<double> numeros;
+    for (int i = 0; i < cantidadNumeros; ++i) {
+        double numero;
+        cout << "Ingrese el numero " << i + 1 << ": ";
+        cin >> numero;
+        numeros.push_back(numero);
+    }
+
+    double promedio = calcularPromedio(numeros);
+    cout << "El promedio de los numeros ingresados es: " << promedio << endl;
+
+    return 0;
+}
