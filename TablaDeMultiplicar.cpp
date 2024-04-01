@@ -1,6 +1,7 @@
 //crear una tabla de multiplicar 
 
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
 

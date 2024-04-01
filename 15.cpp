@@ -1,9 +1,10 @@
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
 
 using namespace std;
 
-// Clase para el cajero automático
+// Clase para el cajero automï¿½tico
 class CajeroAutomatico {
 private:
     float saldo;
@@ -28,9 +29,9 @@ public:
 };
 
 int main() {
-    CajeroAutomatico cajero(1000); // Saldo inicial del cajero automático
+    CajeroAutomatico cajero(1000); // Saldo inicial del cajero automï¿½tico
 
-    cout << "Bienvenido al Cajero Automático" << endl;
+    cout << "Bienvenido al Cajero Automatico" << endl;
 
     while (true) {
         cout << "Opciones:" << endl;
@@ -40,7 +41,7 @@ int main() {
         cout << "4. Salir" << endl;
 
         int opcion;
-        cout << "Ingrese el número de la opción deseada: ";
+        cout << "Ingrese el numero de la opcion deseada: ";
         cin >> opcion;
 
         switch (opcion) {
@@ -53,7 +54,7 @@ int main() {
                 cout << "Ingrese la cantidad a depositar: $";
                 cin >> cantidad;
                 cajero.depositar(cantidad);
-                cout << "Depósito exitoso." << endl;
+                cout << "Depï¿½sito exitoso." << endl;
                 break;
             }
             case 3: {
@@ -64,11 +65,11 @@ int main() {
                 break;
             }
             case 4: {
-                cout << "Gracias por usar el Cajero Automático. ¡Hasta luego!" << endl;
+                cout << "Gracias por usar el Cajero Automatico. Hasta luego" << endl;
                 return 0;
             }
             default: {
-                cout << "Opción no válida. Por favor, seleccione una opción válida." << endl;
+                cout << "Opcion no valida. Por favor, seleccione una opcion valida." << endl;
                 break;
             }
         }

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <cstdlib>
 
 using namespace std;
 
@@ -17,7 +18,7 @@ int main() {
 
     string hexadecimalNum = decimalToHexadecimal(decimalNum);
 
-    cout << "El número hexadecimal equivalente es: " << hexadecimalNum << endl;
+    cout << "El numero hexadecimal equivalente es: " << hexadecimalNum << endl;
 
     return 0;
 }

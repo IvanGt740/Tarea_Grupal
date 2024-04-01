@@ -2,12 +2,13 @@
 
 #include <iostream>
 #include <string>
+#include <cstdlib>
 
 using namespace std;
 //por medio de un string declaramos las unidades, decenas, especiales y centenas 
 string unidades[] = {"", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve"};
 string decenas[] = {"", "diez", "veinte", "treinta", "cuarenta", "cincuenta", "sesenta", "setenta", "ochenta", "noventa"};
-string especiales[] = {"diez", "once", "doce", "trece", "catorce", "quince", "dieciséis", "diecisiete", "dieciocho", "diecinueve"};
+string especiales[] = {"diez", "once", "doce", "trece", "catorce", "quince", "diecisï¿½is", "diecisiete", "dieciocho", "diecinueve"};
 string centenas[] = {"", "ciento", "doscientos", "trescientos", "cuatrocientos", "quinientos", "seiscientos", "setecientos", "ochocientos", "novecientos"};
 
 

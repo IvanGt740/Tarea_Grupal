@@ -1,9 +1,10 @@
 #include <iostream>
 #include <cmath>
+#include <cstdlib>
 
 using namespace std;
 
-// Clase base para figuras geométricas
+// Clase base para figuras geomï¿½tricas
 class FiguraGeometrica {
 public:
     virtual float area() = 0;
@@ -26,7 +27,7 @@ public:
     }
 };
 
-// Clase para un círculo
+// Clase para un cï¿½rculo
 class Circulo : public FiguraGeometrica {
 private:
     float radio;
@@ -42,7 +43,7 @@ public:
     }
 };
 
-// Clase para un triángulo
+// Clase para un triï¿½ngulo
 class Triangulo : public FiguraGeometrica {
 private:
     float base;
@@ -55,18 +56,18 @@ public:
     }
 
     float perimetro() override {
-        // Suponemos que es un triángulo equilátero para este ejemplo
+        // Suponemos que es un triï¿½ngulo equilï¿½tero para este ejemplo
         return 3 * base;
     }
 };
 
 int main() {
-    // Crear objetos de las figuras geométricas
+    // Crear objetos de las figuras geomï¿½tricas
     Cuadrado cuadrado(5);
     Circulo circulo(3);
     Triangulo triangulo(4, 5);
 
-    // Calcular y mostrar el área y el perímetro de cada figura
+    // Calcular y mostrar el ï¿½rea y el perï¿½metro de cada figura
     cout << "Cuadrado:" << endl;
     cout << "Area: " << cuadrado.area() << endl;
     cout << "Perimetro: " << cuadrado.perimetro() << endl;

@@ -29,10 +29,10 @@ cout<<"\n###   ### ###   ### #########\n###   ### ######### ##\n###   ### ## ###
         cout<<"14. Mover un punto en toda la pantalla"<<endl;
         cout<<"15. Simulacion de un Cajero (Automata)"<<endl;
         cout<<"16. Calcular la hipotenusa"<<endl;
-        cout<<"17. Programa que cuenta chistes"<<endl;
-        cout<<"18. Libre (pueden realizar el programa que ustedes quieran)"<<endl;
-        cout<<"19. Libre (pueden realizar el programa que ustedes quieran)"<<endl;
-        cout<<"20. Libre (pueden realizar el programa que ustedes quieran)"<<endl;
+        cout<<"17. Programa que calcula la distancia entre dos puntos del plano cartesiano"<<endl;
+        cout<<"18. Programa que cuenta chistes"<<endl;
+        cout<<"19. Programa que calcula el promedio"<<endl;
+        cout<<"20. Programa que suma de 4 en 4"<<endl;
  
         // Solicitar entrada al usuario
         int opcion;
@@ -95,16 +95,73 @@ cout<<"\n###   ### ###   ### #########\n###   ### ######### ##\n###   ### ## ###
                 return 0;
                 break;
 
+            case 10: 
+                cout<<"Ha seleccionado el programa 10"<<endl;
+                system("CrearDeFormaGraficaLaMultiplicacionManual");
+                return 0;
+                break;
+            
+            case 11: 
+                cout<<"Ha seleccionado el programa 11"<<endl;
+                system("11");
+                return 0;
+                break;
+
+            case 12: 
+                cout<<"Ha seleccionado el programa 12"<<endl;
+                system("12");
+                return 0;
+                break;
+
+            case 13: 
+                cout<<"Ha seleccionado el programa 13"<<endl;
+                system("13");
+                return 0;
+                break;
+            
+            case 14: 
+                cout<<"Ha seleccionado el programa 14"<<endl;
+                system("14");
+                return 0;
+                break;
+
+            case 15: 
+                cout<<"Ha seleccionado el programa 15"<<endl;
+                system("15");
+                return 0;
+                break;
+
             case 16:
                 cout<<"Ha seleccionado el programa 16"<<endl;
                 system("CalculoHipotenusa");
                 return 0;
                 break;
-            case 17:
+
+            case 17: 
                 cout<<"Ha seleccionado el programa 17"<<endl;
+                system("17");
+                return 0;
+                break;
+
+            
+            case 18:
+                cout<<"Ha seleccionado el programa 18"<<endl;
                 system("ProgramaChistes");
                 return 0;
                 break;
+            
+            case 19:
+                cout<<"Ha seleccionado el programa 19"<<endl;
+                system("PromediosPorgramaLibre");
+                return 0;
+                break;
+            
+            case 20:
+                cout<<"Ha seleccionado el programa 18"<<endl;
+                system("sumaDe4En4ProgramaLibre");
+                return 0;
+                break;
+            
             default:
                 cout << "Error, por favor escriba un numero correcto" << endl; 
                 break;

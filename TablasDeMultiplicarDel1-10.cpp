@@ -1,6 +1,7 @@
 //crear las tablas de multiplicar del 1 - 10
 
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
 
