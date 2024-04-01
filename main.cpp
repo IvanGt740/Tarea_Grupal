@@ -95,6 +95,12 @@ cout<<"\n###   ### ###   ### #########\n###   ### ######### ##\n###   ### ## ###
                 return 0;
                 break;
 
+            case 10: 
+                cout<<"Ha seleccionado el programa 10"<<endl;
+                system("multiplicacionManual");
+                return 0;
+                break;
+
             case 16:
                 cout<<"Ha seleccionado el programa 16"<<endl;
                 system("CalculoHipotenusa");
