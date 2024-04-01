@@ -91,7 +91,7 @@ cout<<"\n###   ### ###   ### #########\n###   ### ######### ##\n###   ### ## ###
             
             case 9: 
                 cout<<"Ha seleccionado el programa 9"<<endl;
-                system("TablasDeMultiplicarDel1Al10");
+                system("TablasDeMultiplicarDel1-10");
                 return 0;
                 break;
 
