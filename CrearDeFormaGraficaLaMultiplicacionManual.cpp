@@ -10,35 +10,37 @@ void dibujarLinea(int longitud) {
     cout << endl;
 }
 
-void dibujarNumero(int numero, int ancho) {
-    cout << setw(ancho) << numero;
+void dibujarNumero(int numero, int espacios) {
+    cout << setw(espacios) << numero << endl;
 }
 
 void multiplicacionManual(int multiplicando, int multiplicador) {
     int resultado = multiplicando * multiplicador;
-    int longitudResultado = to_string(resultado).length() + 1;
+    int espacios = to_string(resultado).length() + 1;
 
-    dibujarNumero(multiplicando, longitudResultado);
-    cout << endl;
-    dibujarLinea(longitudResultado);
-    dibujarNumero(multiplicador, longitudResultado);
-    cout << "x" << endl;
-    dibujarLinea(longitudResultado);
+    dibujarNumero(multiplicando, espacios);
+    cout << "x";
+    dibujarNumero(multiplicador, espacios);
+    dibujarLinea(espacios);
 
-    int linea = 0;
-    while (multiplicador > 0) {
-        int fila = (multiplicador % 10) * multiplicando;
-        dibujarNumero(fila, longitudResultado - linea);
-        cout << endl;
-        resultado -= fila * pow(10, linea);
+    int parcial = 0;
+    for (int i = 0; i < to_string(multiplicador).length(); ++i) {
+        int fila = multiplicando * (multiplicador % 10);
         multiplicador /= 10;
-        linea++;
+        dibujarNumero(fila, espacios - i - 1);
+        parcial += fila * pow(10, i);
     }
-    dibujarLinea(longitudResultado);
-    dibujarNumero(resultado, longitudResultado);
+    dibujarLinea(espacios);
+    dibujarNumero(resultado, espacios);
 }
 
 int main() {
-    multiplicacionManual(45, 32);
+    int multiplicando, multiplicador;
+    cout << "Ingrese el multiplicando: ";
+    cin >> multiplicando;
+    cout << "Ingrese el multiplicador: ";
+    cin >> multiplicador;
+
+    multiplicacionManual(multiplicando, multiplicador);
     return 0;
 }
