@@ -5,7 +5,7 @@ using namespace std;
 
 string convertirANumerosRomanos(int numero) {
     if (numero < 1 || numero > 1000) {
-        return "Número fuera de rango.";
+        return "Numero fuera de rango.";
     }
 
     string romano = "";
@@ -31,11 +31,11 @@ string convertirANumerosRomanos(int numero) {
 
 int main() {
     int numero;
-    cout << "Ingrese un número arábigo del 1 al 1000: ";
+    cout << "Ingrese un numero arabigo del 1 al 1000: ";
     cin >> numero;
 
     string numero_romano = convertirANumerosRomanos(numero);
-    cout << "El número " << numero << " en números romanos es: " << numero_romano << endl;
+    cout << "El numero " << numero << " en numeros romanos es: " << numero_romano << endl;
 
     return 0;
 }

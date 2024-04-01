@@ -5,11 +5,11 @@
 
 using namespace std;
 
-// Función para convertir la parte entera de un número a letras
+// Funcion para convertir la parte entera de un nï¿½mero a letras
 string convertir_parte_entera_a_letras(int parte_entera) {
     string unidades[] = {"", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve"};
     string decenas[] = {"", "diez", "veinte", "treinta", "cuarenta", "cincuenta", "sesenta", "setenta", "ochenta", "noventa"};
-    string especiales[] = {"diez", "once", "doce", "trece", "catorce", "quince", "dieciséis", "diecisiete", "dieciocho", "diecinueve"};
+    string especiales[] = {"diez", "once", "doce", "trece", "catorce", "quince", "diecisï¿½is", "diecisiete", "dieciocho", "diecinueve"};
     string centenas[] = {"", "ciento", "doscientos", "trescientos", "cuatrocientos", "quinientos", "seiscientos", "setecientos", "ochocientos", "novecientos"};
 
     if (parte_entera < 10) {
@@ -33,7 +33,7 @@ string convertir_parte_entera_a_letras(int parte_entera) {
     }
 }
 
-// Función para convertir la parte decimal de un número a letras
+// Funcion para convertir la parte decimal de un numero a letras
 string convertir_parte_decimal_a_letras(int parte_decimal) {
     if (parte_decimal < 10) {
         return "cero " + convertir_parte_entera_a_letras(parte_decimal);
@@ -42,7 +42,7 @@ string convertir_parte_decimal_a_letras(int parte_decimal) {
     }
 }
 
-// Función para convertir un número entero con decimal a letras
+// Funciï¿½n para convertir un nï¿½mero entero con decimal a letras
 string convertir_numero_a_letras(double numero) {
     int parte_entera = static_cast<int>(numero);
     int parte_decimal = static_cast<int>((numero - parte_entera) * 100);

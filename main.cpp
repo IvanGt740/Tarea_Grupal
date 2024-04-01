@@ -67,31 +67,31 @@ cout<<"\n###   ### ###   ### #########\n###   ### ######### ##\n###   ### ## ###
                 break;
             case 5: 
                 cout<<"Ha seleccionado el programa 5"<<endl;
-                system("Conversión de números arábigos a romanos");
+                system("ConversionDeNumerosArabigosARomanos");
                 return 0;
                 break;
             
              case 6: 
                 cout<<"Ha seleccionado el programa 6"<<endl;
-                system("Numeros enteros a letras");
+                system("NumerosEnterosALetras");
                 return 0;
                 break;
             
             case 7: 
                 cout<<"Ha seleccionado el programa 7"<<endl;
-                system("Conversión de números enteros con decimal a letras");
+                system("ConversionDeNumerosEnterosConDecimalALetras");
                 return 0;
                 break;
             
              case 8: 
                 cout<<"Ha seleccionado el programa 8"<<endl;
-                system("Tabla de multiplicar");
+                system("TablaDeMultiplicar");
                 return 0;
                 break;
             
             case 9: 
                 cout<<"Ha seleccionado el programa 9"<<endl;
-                system("Tablas de multiplicar del 1 al 10");
+                system("TablasDeMultiplicarDel1Al10");
                 return 0;
                 break;
 
